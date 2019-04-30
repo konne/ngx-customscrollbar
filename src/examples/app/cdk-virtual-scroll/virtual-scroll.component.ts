@@ -8,12 +8,14 @@ import { ViewportControl } from "ngx-customscrollbars";
   templateUrl: "virtual-scroll.component.html",
   viewProviders: [ViewportControl]
 })
-export class VirtualScrollExampleComponent implements OnInit {
+export class CdkVirtualScrollOverviewExampleComponent implements OnInit {
   public items;
 
   public constructor(private ctrl: ViewportControl) {
+    console.log(ctrl);
   }
 
   public ngOnInit() {
+    this.items = Array.from({ length: 15 }).map((_, i) => `Item #${i}`);
   }
 }

@@ -1,4 +1,12 @@
-<cdk-virtual-scroll-viewport itemSize="50" class="example-viewport" ngxCustomScrollbarScrollable>
-  <div *cdkVirtualFor="let item of items" class="example-item">{{item}}</div>
-</cdk-virtual-scroll-viewport>
+<!-- virtual scroll container 
+    - initial kann ich mir die Daten vom Container holen die ich habe
+    - dann ist mir auch bewusst welche Items existieren
+    - we need total amount of items
+    - itemSize required ?
+    - scrollSize on scroll (default item height) or should we pass this through
+-->
+
+<!-- this is the wrapper -->
+<ul ngxCustomScrollbarVirtualViewport style="height: 400px; width: 300px; border: 1px solid #000; margin: 0; padding: 0; list-style-type: none;">
+</ul>
 <ngx-customscrollbar *ngxCustomScrollbarOverflowY></ngx-customscrollbar>

@@ -10,8 +10,9 @@ import { HorizontalVerticalScrollComponent } from "./horizontal-vertical-scroll/
 import { AsyncScrollComponent } from "./async/async-scroll.component";
 import { NgxCustomScrollbarModule } from "ngx-customscrollbars";
 import { TableComponent } from "./table/table.component";
-import { CdkVirtualScrollOverviewExampleComponent } from "./virtual-scroll/virtual-scroll.component";
+import { CdkVirtualScrollOverviewExampleComponent } from "./cdk-virtual-scroll/virtual-scroll.component";
 import { ScrollingModule } from "@angular/cdk/scrolling";
+import { VirtualScrollExampleComponent } from "./virtual-scroll/virtual-scroll.component";
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ScrollingModule } from "@angular/cdk/scrolling";
     HorizontalVerticalScrollComponent,
     VerticalScrollComponent,
     CdkVirtualScrollOverviewExampleComponent,
+    VirtualScrollExampleComponent,
     TableComponent
   ],
   imports: [
@@ -34,7 +36,7 @@ import { ScrollingModule } from "@angular/cdk/scrolling";
             component: VerticalScrollComponent
         },
         {
-            path: "virtual",
+            path: "cdk-virtual-scroll",
             component: CdkVirtualScrollOverviewExampleComponent
         },
         {
@@ -52,6 +54,10 @@ import { ScrollingModule } from "@angular/cdk/scrolling";
         {
             path: "table",
             component: TableComponent
+        },
+        {
+            path: "virtual-scroll",
+            component: VirtualScrollExampleComponent
         }
     ])
   ],
